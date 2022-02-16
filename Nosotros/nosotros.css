@@ -40,11 +40,13 @@
 
 .textoSubtitulos {
   font-size: 30px;
+  color: white;
   text-align: center;
+  text-shadow: 2px 2px 2px #558abb;
 }
 
 .textoParrafo {
-  text-align: center;
+  text-align: justify;
   font-size: 20px;
 }
 

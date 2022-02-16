@@ -1,0 +1,14 @@
+.external {
+  background-color: coral;
+  width: 300px;
+  padding: 10px;
+}
+
+.internal {
+  background-color: aqua;
+  border: solid;
+  border-color: black;
+  border-width: 5px;
+  margin: 10px;
+  padding: 0px;
+}
