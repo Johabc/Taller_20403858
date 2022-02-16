@@ -8,33 +8,58 @@
     <link href="../Estilos/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../Estilos/estilos.css">
     <link href="estilos/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="Estilos/estilos.css">
     <link rel="stylesheet" href="servicios.css">
+    <link rel="stylesheet" href="../Imagenes">
     <!--Script-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     
+    <style>
+      #tamaño
+      {
+        width: 500px;
+        height: 500px;
+        border: solid;
+      }
+    </style>
 </head>
-<body>
-    <div class="coloresMenu">
-    <ul class="nav nav-tabs">
-        <li class="nav-item">
-          <a class="nav-link coloresPalabrasMenu" href="../index.html">Inicio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link coloresPalabrasMenu" href="../Nosotros/nosotros.html">Nosotros</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active coloresPalabrasMenu" aria-current="page" href="../Servicios/servicios.html">Servicios</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link coloresPalabrasMenu" href="../Contacto/contacto.html">Contacto</a>
-        </li>
-      </ul>
-      </div>
+<body class="coloresPagina">
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #ff5b32;" >
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="../Imagenes/logo.png" alt="" width="30" height="34" class="d-inline-block align-text-top">
+        Popcorn Mania
+      </a>
+      
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+       
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">Inicio</a>
+          </li>
 
-      <div class="container-fluid coloresPagina"> <!--Background de toda la pag-->
+          <li class="nav-item">
+            <a class="nav-link" href="../Nosotros/nosotros.html">Nosotros</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../Servicios/servicios.html">Servicios</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="../Contacto/contacto.html">Contacto</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Busca series o peliculas" aria-label="Buscar">
+          <button class="btn btn-outline-success" type="submit">Buscar</button>
+        </form>
+      </div>
+  
+  </nav>
+
         <!--Estrenos, primer slide-->
         <br>
+        <div id="inicio"></div>
         <h1 id="Titulos">¡Peliculas en estreno que debes ver!</h1>
         <br>
         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
@@ -46,15 +71,16 @@
             
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="https://i.blogs.es/78ee7e/x83rf1n/1366_2000.jpg" class="d-block w-100" alt="...">
+                <img src="../Imagenes/spencer.jpg" class="d-block w-100" alt="spencer">
                 <div class="row" id="OpacidadFondo"></div>
                 <div class="carousel-caption d-none d-md-block"> 
                   <h5>Spencer</h5>
-                  <p>Some representative placeholder content for the first slide.</p>
+                  <div class="internal"></div>
+                  <p>El matrimonio entre la princesa Diana y el príncipe Carlos se ha enfriado. Aunque abundan los rumores de aventuras y divorcios, la paz está ordenada para las festividades navideñas. Sin embargo, este año las cosas serán profundamente diferentes.</p>
                 </div>
               </div>
               <div class="carousel-item">
-                <img src="https://i.ytimg.com/vi/w6wkXglYLMM/maxresdefault.jpg" class="d-block w-100" alt="...">
+                <img src="../Imagenes/Pasajero666.jpg" class="d-block w-100" alt="...">
                 <div class="row" id="OpacidadFondo"></div>
                 <div class="carousel-caption d-none d-md-block">
                   <h5>Pasajero 666</h5>
@@ -64,7 +90,7 @@
                 </div>
               </div>
               <div class="carousel-item">
-                <img src="https://www.humonegro.com/wp-content/SPIDERMAN-NO-WAY-HOME-FRONTAL.png" class="d-block w-100" alt="...">
+                <img src="../Imagenes/SPIDERMAN-NO-WAY-HOME-FRONTAL.png" class="d-block w-100" alt="...">
                 <div class="row" id="OpacidadFondo"></div>
                 <div class="carousel-caption d-none d-md-block">
                   <h5>Spiderman No Way Home</h5>
@@ -83,9 +109,11 @@
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Next</span>
             </button>
+          
           </div> <!--Se acaba primer carrusel-->
     
        <!--Recomendaciones del mes pelis-->
+       <br>
        <br>
         <h1 id="Titulos">¡No te pierdas nuestras peliculas favoritas!</h1>
         <br>
@@ -102,7 +130,7 @@
                 <div class="row" id="OpacidadFondo"></div>
                 <div class="carousel-caption d-none d-md-block"> 
                   <h5>Encanto</h5>
-                  <p>Some representative placeholder content for the first slide.</p>
+                  <p>Una joven colombiana puede ser la última esperanza para su familia, cuando descubre que la magia que rodea a Encanto, un lugar encantado que bendice a los niños con dones únicos, se encuentra en serio peligro</p>
                 </div>
               </div>
               <div class="carousel-item">
@@ -112,7 +140,8 @@
                   <h5>Don't Look Up</h5>
                   <br>
                   <div class="internal"></div>
-                  <p>Some representative placeholder content for the first slide.</p>
+                  <p>
+                    Dos astrónomos realizan una gira mediática para advertirle a la humanidad de un cometa mortal que está en rumbo de colisión con la tierra. La respuesta del mundo: ¿Y?</p>
                   </div>
               </div>
               <div class="carousel-item">
@@ -122,7 +151,7 @@
                   <h5>Love, Rosie</h5>
                   <br>
                 <div class="internal">
-                  <p>Some representative placeholder content for the first slide.</p>
+                  <p>Rosie y Alex son desde su infancia los mejores amigos del mundo. Sin embargo, en los últimos días de instituto, una serie de acontecimientos los distancia anímica y físicamente.</p>
                 </div>
             </div>
               </div>
@@ -138,7 +167,7 @@
           </div> <!--Se acaba segundo carrusel-->
     
           <!--Recomendaciones del mes series-->
-          <br>
+          <br><br>
         <h1 id="Titulos">¡Series que tienes que ver!</h1>
         <br>
         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
@@ -150,11 +179,11 @@
             
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="https://m.media-amazon.com/images/I/61CMdmBUSoL._AC_SX569_.jpg" class="d-block w-100" alt="...">
+                <img src="https://static.wikia.nocookie.net/32c5d1e2-0986-4a26-9efc-26f50d15c6d5" class="d-block w-100" alt="...">
                 <div class="row" id="OpacidadFondo"></div>
                 <div class="carousel-caption d-none d-md-block"> 
                   <h5>Friends</h5>
-                  <p>Some representative placeholder content for the first slide.</p>
+                  <p>Tres hombres y tres mujeres jóvenes son mejores amigos y viven en el mismo conjunto de apartamentos. Ellos enfrentan la vida y el amor en la ciudad de Nueva York y se involucran en los asuntos personales de los demás, donde incluso a veces intercambian novios o novias, lo que algunas veces genera situaciones que las personas comunes quizás nunca experimentan, especialmente durante las rupturas.</p>
                 </div>
               </div>
               <div class="carousel-item">
@@ -164,17 +193,17 @@
                   <h5>You</h5>
                   <br>
                   <div class="internal"></div>
-                  <p>Some representative placeholder content for the first slide.</p>
+                  <p>Una historia de amor del siglo XXI sobre un obsesivo, pero brillante mánager de 20 años de una librería, quien utiliza la era digital hiperconectada para enamorar a la mujer de sus sueños.</p>
                   </div>
               </div>
               <div class="carousel-item">
-                <img src="https://images.ecestaticos.com/rBuQmhnys-QeCk4Ygek16ODjVx4=/0x0:0x0/1600x900/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2Ff18%2Feff%2F264%2Ff18eff264770da2cf5a65260f4fb142c.jpg" class="d-block w-100" alt="...">
+                <img src="https://wave.rozhlas.cz/sites/default/files/images/0918ad591ccee7ea9622cb593e0f11eb.jpg" class="d-block w-100" alt="...">
                 <div class="row" id="OpacidadFondo"></div>
                 <div class="carousel-caption d-none d-md-block">
                   <h5>The circle</h5>
                   <br>
                 <div class="internal">
-                  <p>Some representative placeholder content for the first slide.</p>
+                  <p>Una serie de competencias en las que los jugadores deben elegir ser ellos mismos u otras personas mientras tratan de obtener un premio en efectivo.</p>
                 </div>
             </div>
               </div>
@@ -189,8 +218,8 @@
             </button>
           </div> <!--Se acaba tercer carrusel-->
     
-        </div> <!--Cierra color pagina -->
-
+        <a href="#inicio">Ir a titulo</a>
+        
 
 </body>
 </html>
