@@ -12,48 +12,95 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     
 </head>
-<body>
-    <div class="coloresMenu">
-    <ul class="nav nav-tabs">
-        <li class="nav-item">
-            <a class="nav-link disabled ">Popcorn Addict</a>
-          </li>
-        <li class="nav-item">
-          <a class="nav-link active coloresPalabrasMenu" aria-current="page" href="#">Inicio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link coloresPalabrasMenu" href="Nosotros/nosotros.html">Nosotros</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link coloresPalabrasMenu" href="Servicios/servicios.html">Servicios</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link coloresPalabrasMenu" href="Contacto/contacto.html">Contacto</a>
-        </li>
-      </ul>
-    </div> <!--Cierra colores del menu-->
+<body class="coloresPagina">
 
-    <div class="container-fluid coloresPagina"> <!--Background de toda la pag-->
-       <br>
-        <h1  class="Titulos" id="inicio">¡Bienvenido a una nueva manera de encontrar que ver y pasar un buen rato!</h1>
-        <br><br><br>
-        <div class="external">
-            <div class="internal">
-            </div>
-        </div>
-        <br><br><br>
-        <h3 class="textoSubtitulos">¿Quienes somos?</h3>
-        <p class="textoParrafo">Personas aficionadas a ver series y peliculas como pasatiempo </p>
-        <h3 class="textoSubtitulos">¿Qué hacemos?</h3>
-       <p class="textoParrafo"> <ul>
-            <li>Recomendarte series y películas que nos guste</li>
-            <li>Crear un espacio donde puedas compartir con personas sobre alguna película o serie de tu gusto</li>
-            <li>Ayudarte a pasar un buen rato</li>
-        </ul> </p>
-        <a href="#inicio" class="Enlaces">Ir a titulo</a>
-   
-   
-    </div> <!--Cierra color pagina -->
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #ff5b32;" >
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="Imagenes/logo.png" alt="" width="30" height="34" class="d-inline-block align-text-top">
+        Popcorn Mania
+      </a>
+      
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+       
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="Nosotros/nosotros.html">Nosotros</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="Servicios/servicios.html">Servicios</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="Contacto/contacto.html">Contacto</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Busca series o peliculas" aria-label="Buscar">
+          <button class="btn btn-outline-success" type="submit">Buscar</button>
+        </form>
+      </div>
+ </nav>
+
+ <br><h1  class="Titulos">¡Bienvenido a una nueva manera de encontrar que ver y pasar un buen rato!</h1> <br>
+ <h1 class="Titulos">Últimas noticias sobre el cine y la televisión</h1>
+ <br>
+ <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+     <div class="carousel-indicators">
+       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+     </div>
+     
+     <div class="carousel-inner">
+       <div class="carousel-item active">
+        <a href="http://www.premiososcar.net/2022/02/oscars-2022-nominations-nominaciones.html" target="_blank">
+          <img src="https://www.neogol.com/wp-content/uploads/2022/02/donde-ver-oscars-2022-1.jpg" class="d-block w-100" alt="...">
+         </a>
+         <div class="row" id="OpacidadFondo"></div>
+         <div class="carousel-caption d-none d-md-block"> 
+           <h5>Premios Oscar 2022</h5>
+           <p>Conoce las categorias y los nominados a los premios oscar</p>
+         </div>
+       </div>
+       <div class="carousel-item">
+        <a href="https://www.youtube.com/watch?v=Rt_UqUm38BI&ab_channel=MarvelEntertainment" target="_blank">
+          <img src="https://cnnespanol.cnn.com/wp-content/uploads/2022/02/CNN-Doctor-Strange.jpg?quality=100&strip=info&w=780&h=438&crop=1" class="d-block w-100" alt="...">         <div class="row" id="OpacidadFondo"></div>
+         <div class="carousel-caption d-none d-md-block">
+           <h5>Nuevo Trailer</h5>
+           <br>
+           <div class="internal"></div>
+           <p>Doctor Strange in the Multiverse of Madness estrena nuevo tráiler durante el Super Bowl</p>
+           </div>
+       </div>
+       <div class="carousel-item">
+         <a href="#NovedadesNetflix"></a>
+         <img src="https://i0.wp.com/observadorlatino.com/wp-content/uploads/2020/05/KUWTK.jpg" class="d-block w-100" alt="...">
+         <div class="row" id="OpacidadFondo"></div>
+         <div class="carousel-caption d-none d-md-block">
+           <h5>Estrenos en Neflix</h5>
+           <br>
+         <div id="internal">
+           <p>Conoce las series y películas que llegan en el mes de febrero</p>
+         </div>
+     </div>
+       </div>
+     </div>
+     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+       <span class="visually-hidden">Previous</span>
+     </button>
+     <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+       <span class="carousel-control-next-icon" aria-hidden="true"></span>
+       <span class="visually-hidden">Next</span>
+     </button>
+   </div> <!--Se acaba tercer carrusel-->
+
 
 </body>
 </html>
