@@ -1,0 +1,27 @@
+#Titulos {
+  color: white;
+  text-align: center;
+  text-shadow: 2px 2px 2px #558abb;
+}
+
+#OpacidadFondo {
+  background-color: black;
+  opacity: 0.5;
+  height: 172px;
+  width: 951px;
+  position: absolute;
+  bottom: -2px;
+}
+
+#ColorLabels {
+  color: white;
+  text-shadow: 2px 2px 2px #558abb;
+}
+
+.internal {
+  border: solid;
+  margin: -26px;
+  padding: 0;
+  /*width: 757px;*/
+  text-align: justify;
+}
